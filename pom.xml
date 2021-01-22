@@ -121,6 +121,7 @@
                                 <argument>${env.DOCKER_NAME}</argument>
                                 <argument>-p</argument>
                                 <argument>${env.DOCKER_PASSWORD}</argument>
+                                <argument>docker.io</argument>
                             </arguments>
                         </configuration>
                     </execution>

@@ -8,9 +8,9 @@ services:
     ports:
       - "8761:8761"
     environment:
-      MONGODB_DATABASE_STOCKS_ATLAS: "mongodb+srv://stocks:stocks@mflix-lfo1z.mongodb.net/test?retryWrites=true&w=majority"
-      ENCRYPT_KEY: "IMSYMMETRIC"
-      DATABASE_URI: "mongodb+srv://stocks:stocks@mflix-lfo1z.mongodb.net/test?retryWrites=true&w=majority"
+      MONGODB_DATABASE_STOCKS_ATLAS: ${MONGODB_DATABASE_STOCKS_ATLAS}
+      ENCRYPT_KEY: ${ENCRYPT_KEY}
+      DATABASE_URI: ${DATABASE_URI}
 
   zipkinserver:
     container_name: zipkinserver
